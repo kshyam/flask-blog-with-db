@@ -5,21 +5,18 @@
 {% endblock %}
 
 {% block body %}
-<h1>All Posts</h1>
-
-    <hr>
     <h2>Create New Blog Post:</h2>
     <form action='/posts' method='POST'>
         Title:  <br>
-        <input type='text' name='title' id='title'>
-        <br> <br>
+        <input type='text' name='title' id='title' class="form-control">
+        <br>
         Author: <br> 
-        <input type='text' name='author' id='author'>
-        <br> <br>
+        <input type='text' name='author' id='author' class="form-control">
+        <br>
         Post:  <br>
-        <input type='text' name='content' id='content'>
-        <br> <br>
-        <input type='submit' value='Post'>
+        <input type='text' name='content' id='content' class="form-control">
+        <br>
+        <input type='submit' value='Post' class="btn btn-success col-sm-3">
     </form>
     <hr>
 
